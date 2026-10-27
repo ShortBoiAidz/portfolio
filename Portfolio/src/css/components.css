@@ -1,0 +1,140 @@
+/* Text */
+.gradient-text {
+  background: linear-gradient(90deg, var(--lightGradPrim), var(--lightGradSec));
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.pointerCursor {
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.navHeader {
+  text-wrap: nowrap;
+}
+
+.dniSub {
+  font-size: 1rem;
+  margin: 1em;
+}
+
+.dniList span {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.gradient-text-h2 {
+  background: linear-gradient(90deg, var(--darkGradPrim), var(--darkGradSec));
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.gradient-text-h2:hover {
+  background: linear-gradient(90deg, var(--darkGradSec), var(--darkGradPrim));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.hiddenText {
+  display: none;
+}
+
+.notAvailableButton {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Cards */
+.mainCardParent {
+  font-size: 0;
+}
+
+.h2CardParent,
+.playerCard,
+.server-status,
+.weatherForm {
+  background: linear-gradient(135deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
+}
+
+.gradFlipX {
+  background: linear-gradient(225deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
+}
+
+.playerCard,
+.server-status {
+  border-color: var(--darkGradPrimTrans);
+}
+
+.buttonCard {
+  background: linear-gradient(
+    135deg,
+    var(--lightGradPrim),
+    var(--lightGradSec)
+  );
+}
+
+.playerInfoCard {
+  background: linear-gradient(135deg, var(--lightGradPrim), var(--lightGradSec));
+}
+
+.weatherCard {
+  backdrop-filter: blur(2px);
+  background: linear-gradient(135deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
+}
+
+.h2CardParent {
+  backdrop-filter: blur(2px);
+}
+
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+.sidebar h4 {
+  color: var(--darkGradPrim);
+  font-size: clamp(30px, 2vw, 50px);
+}
+.sidebar h4:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.mainNav,
+.playerList {
+  background: linear-gradient(135deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallaryCard {
+  border: solid 4px var(--darkGradPrim);
+}
+
+/* Images */
+.fa-bars {
+  color: var(--darkGradPrim);
+  font-size: clamp(50px, 2vw, 50px);
+}
+
+.sidebarIcon {
+  color: var(--darkGradPrim);
+}
+
+.fa-rectangle-xmark {
+  color: var(--darkGradPrim)
+}
+
+.headerIcon {
+  color: rgb(181, 153, 242);
+}

@@ -1,0 +1,133 @@
+/* Colors */
+:root {
+  --darkGradPrim: rgb(44, 0, 65);
+  --darkGradSec: rgb(72, 0, 90);
+  --lightGradPrim: rgb(171, 136, 247);
+  --lightGradSec: rgb(125, 44, 187);
+
+  --darkGradPrimTrans: rgba(44, 0, 65, 0.75);
+  --darkGradSecTrans: rgb(72, 0, 90, 0.75);
+  --lightGradPrimTrans: rgb(171, 136, 247, 0.75);
+  --lightGradSecTrans: rgb(125, 44, 187, 0.75);
+  --leagueSpartan: "League Spartan", "Comic Sans MS", sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background-image: url("../assets/background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  overflow-x: hidden;
+
+  font-family: var(--leagueSpartan);
+}
+
+/* Base Components */
+button {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 25px;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+
+  margin: 10px;
+  padding: clamp(5px, 2vw, 20px);
+
+  cursor: pointer;
+
+  border-style: outset;
+  border-color: var(--darkGradPrim);
+
+  background: linear-gradient(90deg, var(--lightGradPrim), var(--lightGradSec));
+}
+
+/* Typography */
+h1 {
+  font-size: clamp(30px, 4vw, 80px);
+  margin-top: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: clamp(23px, 2vw, 30px);
+}
+
+h3,
+sub {
+  font-size: clamp(20px, 2vw, 30px);
+}
+
+h3 {
+  margin: 2px;
+  color: var(--darkGradPrim);
+}
+
+h4 {
+  font-size: clamp(17px, 2vw, 23px);
+  line-height: clamp(40px, 2vw, 70px);
+  text-wrap: balance;
+}
+
+h5 {
+  font-size: clamp(12px, 5vw, 20px);
+  line-height: clamp(30px, 4vw, 40px);
+}
+
+h4,
+h5 {
+  margin: auto;
+}
+
+i {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: clamp(30px, 2vw, 45px);
+}
+
+p,
+h2,
+i {
+  color: var(--textColour);
+  font-family: var(--leagueSpartan);
+}
+
+p {
+  font-size: clamp(12.5px, 2vw, 15px);
+  text-wrap: balance;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  list-style: none;
+}
+
+a {
+  color: var(--textColour);
+  text-decoration: none;
+}

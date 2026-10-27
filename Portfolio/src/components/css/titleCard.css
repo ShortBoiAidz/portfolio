@@ -1,0 +1,52 @@
+.logo {
+  display: flex;
+  position: absolute;
+
+  width: 10vw;
+  height: auto;
+  bottom: 93%;
+  margin-bottom: 1em;
+
+  border-radius: 100%;
+  z-index: 999;
+}
+
+.homeCard {
+  background: linear-gradient(
+    135deg,
+    var(--darkGradPrimTrans),
+    var(--darkGradSecTrans)
+  );
+
+  backdrop-filter: blur(2px);
+  border-radius: 25px;
+
+  padding-bottom: clamp(10px, 4vw, 20px);
+  padding-top: 0;
+
+  && > h1 {
+    text-wrap: nowrap;
+  }
+
+  margin-bottom: 1rem;
+}
+
+.homeCardParent {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.mainCardParent {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  text-align: center;
+
+  top: 30%;
+
+  min-height: 100vh;
+}
