@@ -2,22 +2,12 @@
 import "./css/titleCard.css";
 
 //& ================================================
-//~path Importing images
-import profilePicture from "../assets/pfp.png";
-
-//& ================================================
 
 export function TitleCard() {
   const THEME = "Purple";
 
   return (
     <>
-      <img
-        src={profilePicture}
-        alt="ShortBoi's PFP"
-        className="logo"
-        id="logo"
-      />
       <div className="homeCard">
         <h1 className="gradient-text">ShortBoi's Bio</h1>
 

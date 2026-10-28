@@ -4,4 +4,49 @@ main {
 
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  align-items: center;
+
+  height: 100dvh;
+  width: clamp(20vw, 45vw, 45vw);
+
+  margin-bottom: 10px;
+  padding-top: 6%;
+}
+
+.logo {
+  display: flex;
+  position: relative;
+
+  width: 25%;
+  height: auto;
+  margin-top: 10px;
+
+  border-radius: 100%;
+  z-index: 999;
+}
+
+.homeCardParent {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.mainCardParent {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  text-align: center;
+
+  top: 30%;
 }
