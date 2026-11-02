@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "react": "^19.3.1",
-    "react-router-dom": "^7.18.5"
+    "wrangler": "^4.156.1"
   }
 }

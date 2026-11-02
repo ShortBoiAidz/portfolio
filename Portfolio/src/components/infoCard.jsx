@@ -4,18 +4,13 @@ import "./css/infoCard.css";
 
 //& ================================================
 
-export function InfoCard() {
+export function InfoCard(props) {
   return (
     <>
       <div className="infoCardParent">
         <div className="infoCard">
-          <h2 className="gradient-text">Brief:</h2>
-          <p className="gradient-text">
-            Hello! My name is Arlo. I am a front-end web developer and game
-            developer from Australia with ~2 years experience in JavaScript and
-            ~1 year of experience with Python. I have a solid understanding of
-            React JS and I am currently learning TypeScript.
-          </p>
+          {props.heading}
+          {props.description}
 
           <h2 className="gradient-text">Details:</h2>
           <ul>

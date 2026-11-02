@@ -1,0 +1,58 @@
+.mainPersonsSection {
+  display: grid;
+  grid-template-rows: 1fr 250px;
+
+  margin-left: 15em;
+  margin-right: 15em;
+}
+
+.personCard {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  align-items: center;
+
+  border-radius: 25px;
+  border: 2px solid var(--darkGradPrimTrans);
+  padding: clamp(10px, 2vw, 20px);
+
+  width: 20em;
+  height: clamp(30em, 50px, 40em);
+
+  background: linear-gradient(135deg, var(--darkGradPrimTrans), var(--darkGradSecTrans));
+
+  && > h2 {
+    margin-top: 1rem;
+  }
+}
+
+.personInfoCard {
+  display: flex;
+  background: linear-gradient(135deg, var(--lightGradPrim), var(--lightGradSec));
+
+  width: stretch;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 1rem;
+
+  padding: clamp(10px, 2vw, 20px);
+  padding-left: clamp(20px, 4vw, 40px);
+  padding-right: clamp(20px, 4vw, 40px);
+
+  border-radius: 45px;
+}
+
+.personImg {
+  display: flex;
+  overflow: hidden;
+
+  width: clamp(80px, 10vw, 150px);
+  height: auto;
+
+  border-radius: 100%;
+}
